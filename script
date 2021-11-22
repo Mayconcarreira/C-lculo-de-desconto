@@ -1,0 +1,24 @@
+#include <stdio.h>
+
+int main()
+{
+    float valor_prod, percen_desc, valor_final, valor_desc;
+
+    //informar valor do produto inicial
+    printf("Digite o Valor do produto:\n ");
+    scanf("%f", &valor_prod);
+
+    //informar valor do desconto
+    printf("Digite o percentual de desconto:\n ");
+    scanf("%f", &percen_desc);
+
+    //Cálculo do desconto e do valor descontado.
+    valor_desc = valor_prod * percen_desc / 100;
+    valor_final = valor_prod - valor_desc;
+
+    //Valores informado ao cliente.
+    printf("O valor do produto com desconto e: %.2f\n e o valor descontado e %.2f\n", valor_final, valor_desc);
+
+
+    return 0;
+}
